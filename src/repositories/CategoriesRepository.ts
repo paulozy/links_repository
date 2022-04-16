@@ -15,14 +15,6 @@ export class CategoriesRepository {
   create({ name, description }: ICreateCategoryDTO): void {
     const category = new Category();
 
-    const categoryAlreadyExists = this.categories.find(
-      (category) => category.name === name
-    );
-
-    if (categoryAlreadyExists) {
-      throw new Error(`Category already exists`);
-    }
-
     Object.assign(category, {
       name,
       description,
@@ -34,5 +26,9 @@ export class CategoriesRepository {
 
   list(): Category[] {
     return this.categories;
+  }
+
+  findByName(name: string): Category {
+    return this.categories.find((category) => category.name === name);
   }
 }
