@@ -4,16 +4,16 @@
   "main": "index.js",
   "author": "Paulo Abreu <micaeler00@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "git-commit-msg-linter": "^4.1.1"
-  },
   "devDependencies": {
-    "@types/node": "^17.0.23",
-    "@typescript-eslint/eslint-plugin": "^4.0.1",
-    "eslint": "^7.12.1",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.0.0",
-    "typescript": "^4"
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-import-helpers": "^1.2.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.2"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.19.0",
+    "eslint-config-airbnb-base": "^15.0.0"
   }
 }
