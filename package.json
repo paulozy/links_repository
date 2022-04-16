@@ -4,9 +4,16 @@
   "main": "index.js",
   "author": "Paulo Abreu <micaeler00@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "tsnd --transpile-only --ignore-watch node_modules --respawn src/server.ts"
+  },
   "devDependencies": {
+    "@types/express": "^4.17.13",
     "@types/node": "^17.0.24",
+    "@types/uuid": "^8.3.4",
+    "@typescript-eslint/eslint-plugin": "^5.19.0",
     "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-typescript": "^2.7.1",
     "eslint-plugin-import-helpers": "^1.2.1",
@@ -16,9 +23,7 @@
     "typescript": "^4.6.3"
   },
   "dependencies": {
-    "@types/express": "^4.17.13",
-    "@typescript-eslint/eslint-plugin": "^5.19.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "uuid": "^8.3.2"
   }
 }
