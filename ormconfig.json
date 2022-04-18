@@ -1,0 +1,9 @@
+{
+  "type": "postgres",
+  "host": "database",
+  "port": "5430",
+  "password": "postgres",
+  "username": "postgres",
+  "database": "links_repo",
+  "migrations": ["src/database/migrations"]
+}
