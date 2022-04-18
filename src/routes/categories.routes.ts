@@ -3,7 +3,6 @@ import { CategoriesRepository } from "../repositories/CategoriesRepository";
 import { CreateCategoryService } from "../services/CreateCategoryService";
 
 export const categoriesRoutes = Router();
-
 const categoriesRepository = new CategoriesRepository();
 
 categoriesRoutes.post("/", (req, res) => {
