@@ -5,7 +5,8 @@
   "author": "Paulo Abreu <micaeler00@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "tsnd --transpile-only --ignore-watch node_modules --respawn src/server.ts"
+    "dev": "tsnd --transpile-only --ignore-watch node_modules --respawn src/server.ts",
+    "typeorm": "tsnd ./node_modules/typeorm/cli"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",

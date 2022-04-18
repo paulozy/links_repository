@@ -1,9 +1,12 @@
 {
   "type": "postgres",
   "host": "database",
-  "port": "5430",
+  "port": "5432",
   "password": "postgres",
   "username": "postgres",
   "database": "links_repo",
-  "migrations": ["src/database/migrations"]
+  "migrations": ["./src/database/migrations/*.ts"],
+  "cli": {
+    "migrationsDir": "./src/database/migrations"
+  }
 }
