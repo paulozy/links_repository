@@ -12,6 +12,7 @@ export interface IResponse {
   user: {
     name: string;
     email: string;
+    isAdmin: boolean;
   };
   token: string;
 }
@@ -40,9 +41,15 @@ export class AuthenticateUserUseCase {
       expiresIn: "1d",
     });
 
-    return {
-      user,
+    const tokenReturns: IResponse = {
       token,
+      user: {
+        name: user.name,
+        email: user.email,
+        isAdmin: user.isAdmin,
+      },
     };
+
+    return tokenReturns;
   }
 }
