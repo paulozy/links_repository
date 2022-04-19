@@ -20,7 +20,12 @@ export async function ensureAuthenticated(
   const [, token] = authHeader.split(" ");
 
   try {
-    verify(token, process.env.SECRET_KEY) as IPayload;
+    const { sub: user_id } = verify(token, process.env.SECRET_KEY) as IPayload;
+
+    req.user = {
+      id: user_id,
+    };
+
     next();
   } catch (error) {
     throw new AppError(error.message, 401);

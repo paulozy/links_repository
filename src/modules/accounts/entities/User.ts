@@ -16,6 +16,9 @@ export class User {
   password: string;
 
   @Column()
+  avatar?: string;
+
+  @Column()
   isAdmin: boolean;
 
   @CreateDateColumn()
