@@ -1054,7 +1054,12 @@
   "resolved" "https://registry.npmjs.org/etag/-/etag-1.8.1.tgz"
   "version" "1.8.1"
 
-"express@^4.17.3":
+"express-async-errors@^3.1.1":
+  "integrity" "sha512-h6aK1da4tpqWSbyCa3FxB/V6Ehd4EEB15zyQq9qe75OZBp0krinNKuH4rAY+S/U/2I36vdLAUFSjQJ+TFmODng=="
+  "resolved" "https://registry.npmjs.org/express-async-errors/-/express-async-errors-3.1.1.tgz"
+  "version" "3.1.1"
+
+"express@^4.16.2", "express@^4.17.3":
   "integrity" "sha512-yuSQpz5I+Ch7gFrPCk4/c+dIBKlQUxtgwqzph132bsT6qhuzss6I8cLJQz7B3rFblzd6wtcI0ZbGltH/C4LjUg=="
   "resolved" "https://registry.npmjs.org/express/-/express-4.17.3.tgz"
   "version" "4.17.3"
