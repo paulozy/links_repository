@@ -1,7 +1,7 @@
 import { v4 as uuid } from "uuid";
 import { Column, CreateDateColumn, Entity, PrimaryColumn } from "typeorm";
 
-@Entity()
+@Entity("categories")
 export class Category {
   @PrimaryColumn()
   id?: string;
